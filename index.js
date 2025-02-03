@@ -1,20 +1,17 @@
-// Task first start from here 
-let marks = prompt("Enter your marks");
-if( marks >= 20){
-    alert("Your grade is C")
+
+
+//  Calculation task 1st start from here!
+
+let age = prompt("Enter your age");
+if( age >= 18){
+    alert("Wow you're adult")
 }
-if( marks >= 40){
-    alert("Your grade is B")
-}
-if( marks >= 60){
-    alert("Your grade is B+")
-}
-if( marks >= 80){
-    alert("Your grade is A")
-}
-if( marks >= 90){
-    alert("Your grade is A+")
-}
+
 else{
-    alert("Please Enter your marks under 100")
+    alert("Sorry, You're not an Adult")
 }
+
+
+
+
+// Calculatoin task 1at ends here!
