@@ -1,2 +1,12 @@
-var password= "abcdefghijklmnopqrstuvwxyz12345679!%*!$#^%$&$(&*#()*!_*_)#"
-console.log(Math.random);
+var abid = 20; 
+var ali = 23; 
+console.log(abid + ali);
+
+
+
+
+
+
+
+
+
