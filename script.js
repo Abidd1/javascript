@@ -1,10 +1,20 @@
+// Jaavascript start foem here
 
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-// Excersise number first start from here
-function greet(name) {
-    return `Hi, ${name}! Welcome to S.M.I.T Peshawar campus`;
+for (let i = 0; i < numbers.length; i++) {
+
+  let isEvenFlag = false;
+
+  if (numbers[i] % 2 === 0) {
+    isEvenFlag = true;
+  }
+
+  if (isEvenFlag) {
+    console.log(numbers[i] + 
+
+" is even");
+  } else {
+    console.log(numbers[i] + " is odd");
+  }
 }
-
-const userName = "Abid";
-console.log(greet(userName)); 
-
