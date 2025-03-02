@@ -1,2 +1,12 @@
-let milisec = newDate(2000-01-10);
-let sec = Math.floor
+import {onCLS, onINP, onLCP} from 'web-vitals';
+
+function sendToAnalytics(metric) {
+  const body = JSON.stringify(metric);
+  // Use `navigator.sendBeacon()` if available, falling back to `fetch()`.
+  (navigator.sendBeacon && navigator.sendBeacon('/analytics', body)) ||
+    fetch('/analytics', {body, method: 'POST', keepalive: true});
+}
+
+onCLS(sendToAnalytics);
+onINP(sendToAnalytics);
+onLCP(sendToAnalytics);
